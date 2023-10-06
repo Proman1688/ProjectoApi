@@ -13,5 +13,4 @@ def UI():
             
     df = API(lim,departamento.upper())
     df = df[["Estado","Edad", "Tipo", "Ciudad de ubicacion", "Departamento", "Pais de Procedencia",]]
-    df['Edad'] = df['Edad'].apply(lambda x: '{:.2f}'.format(x))
     print(df.to_string(index = False))
